@@ -39,13 +39,13 @@ $res2 = $poke->searchBetween2($_GET['siteSearch']);
 
     <main>
             <?php foreach ($res as $value) {?>
-               <a href="./type.php?id=<?= $value['id']?>"><?=$value['name_french']?></a><br>
+               <a href="./element.php?id=<?= $value['id']?>"><?=$value['name_french']?></a><br>
                <span><?= $value['name_english'] ?>,<?= $value['name_japanese'] ?>,<?= $value['name_chinese']?>,
                <?= $value['type0']?>,<?= $value['type1']?></span><br><hr>
         
             <?php ;}?>
             <?php foreach ($res2 as $value) {?>
-               <a href="./type.php?id=<?= $value['id']?>"><?=$value['name_french']?></a><br>
+               <a href="./element.php?id=<?= $value['id']?>"><?=$value['name_french']?></a><br>
                <span><?= $value['name_english'] ?>,<?= $value['name_japanese'] ?>,<?= $value['name_chinese']?>,
                <?= $value['type0']?>,<?= $value['type1']?></span><br><hr>
             <?php ;}?>
