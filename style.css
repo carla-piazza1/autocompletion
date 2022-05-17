@@ -1,10 +1,13 @@
-* {
+ * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-:focus {
-  outline: #e65c00 auto 5px;
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
@@ -19,62 +22,65 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #e65c00;
-  background: -webkit-gradient(linear, left top, right top, from(#f9d423), to(#e65c00));
-  background: linear-gradient(to right, #f9d423, #e65c00);
+          background: linear-gradient(to bottom,rgb(255, 255, 255), rgb(209, 210, 212), rgb(197, 77, 79),rgb(232, 45, 47));
 }
 
-input {
-  border: 0 none;
-}
-
-.search-container {
-  width: 400px;
+.btn{
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
   position: relative;
+  background-color: #ff0000;
+  color: aliceblue;
+  font-family: "upheavtt";
 }
 
-.search-container input,
-.search-container .suggestions {
-  width: 100%;
-}
-
-.search-container input {
-  background: rgba(255, 255, 255, 0.2);
-  height: 60px;
-  padding: 0 10px;
-}
-
-.search-container .suggestions {
+h1{
+  -webkit-text-stroke: 1px rgb(253, 194, 194);
   position: absolute;
-  top: 60px;
+  transform: translate(-50%,0%);
+  left: 50%;
+  z-index: 10;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.0em;
+  color:rgb(255, 0, 0);
+  top: 30%;
+ 
+} 
+
+input{
+  background-color: #ffffff;
+     border-radius: 10px;
+     padding: 10px 5px 5px 70px;
+     color: rgb(0, 0, 0);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-ul {
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  max-height: 200px;
-  overflow-y: auto;
+div a{
+  color:#2c2c2c;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 10;
 }
 
-ul.has-suggestions {
-  display: block;
+#test div{
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+  background-color: #ffffff;
+  border-radius: 10px;
+}  
+
+img{
+  
+  align-items: center;
+  padding-top: -30%;
+  width: 60%;
+  
 }
 
-ul li {
-  padding: 10px;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.2);
-}
 
-ul li:hover {
-  background-color: #e65c00;
-}
 
-input {
-  border-bottom: 2px solid #e65c00;
-}
-/*# sourceMappingURL=style.css.map */
+
+
+
